@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to gravatar_for user, size: 50  %></td>
+    <td><%= link_to user.name, user %></td>
+    <% if current_user.admin? && !current_user?(user)  #user that is being rendered, or user that is vewing tha template current_user(user) %>
+    <td> | <%= link_to "delete", user_path(user), method: :DELETE, #if we don't specify the method:DESTROY, the method GET would of being calledx
+                                               data: {confirm: "You sure?"}  %></td>
+    <% end %>
+  </tr>
+<% end %>

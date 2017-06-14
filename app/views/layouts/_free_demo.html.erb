@@ -1,0 +1,46 @@
+<!-- Start Free Demo Section-->
+<section id="free-demo">
+    <div class="container">
+      <div class="row margin-bottom-zero">
+        <div class="col s12 m12 l12">
+          <h2 class="header-demo-program center-align"><span class="mail-out">FREE MAIL-OUT </span><span class="font-yellow"> Demo Program</span></h2>
+          <h3 class="sub-header-demo-program center-align hide-on-xsmall-and-down">NO stress. No hassle. No obligation.</h3>
+        </div>
+      </div>
+      <div class="row clear-80 center">
+        <div class="col s12 m4 l4">
+          <span class="easy-steps" >1</span><%= image_tag('pic3.png', :size => "91x60",:alt => 'TO BE ADDED') %>
+          <p class="easy-steps-caption contact-us">Contact Us</p>
+        </div>
+        <div class="col s12 m4 l4" >
+          <span class="easy-steps" >2</span><%= image_tag('pic2.png', :size => "91x60",:alt => 'TO BE ADDED') %>
+          <p class="easy-steps-caption pick-date">Pick date & Location</p>
+        </div>
+        <div class="col s12 m4 l4" >
+          <span class="easy-steps" >3</span><%= image_tag('pic1.png', :size => "91x60",:alt => 'TO BE ADDED') %>
+          <p class="easy-steps-caption we-deliver">We Deliver Demo</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-call-demo-program">
+     <div class="container-free-demo">
+        <div class="row phone-header margin-bottom-zero">
+          <div class="col s12 m12 l12">
+            <h3 class="easy-steps-caption-bottom hide-on-small-and-down"><span class="text-color-yellow">CALL </span>1-800-540-7429</h3>
+
+            <div class="call-now-free-demo-wrap">
+               <a href="tel:18005407429" class="btn bc-primary-color  waves-effect waves-light btn-large button-call-now-free-demo hide-on-med-and-up">
+                 <span>Call Now</span>
+                </a>
+              </div>
+
+            <div class="or-wrap"><p class="or-demo-program">OR</p></div>
+            <div class="row" >
+              <%= render 'leads/form_demo',  lead: @lead %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Start Free Demo Section-->

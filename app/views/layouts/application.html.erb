@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <meta name="description" content="<%= yield(:metaDescription) %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <%= favicon_link_tag 'favicon.png' %>
+
+    <%= csrf_meta_tags %>
+
+    <!-- ,CSS Manifest, application.scss Helper Method <% stylesheet_link_tag('application', :media => 'all') %> --->
+    <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Link to the JavaScript Manifest, application.js -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+  <main>
+    <%= yield %>
+  </main>
+  <!-- this is TRUE if we are in development env -->
+  <%= debug(params) if Rails.env.development? %>
+  <!-- Start Javascript -->
+
+
+    <!-- <script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slider({indicators: false});
+        $(".button-collapse").sideNav();
+        $('.carousel.carousel-slider').carousel(
+          {
+            fullWidth: true
+          });
+    });
+    </script> -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        //arrow for the testimonial slider !
+        // $('i.fa-chevron-circle-left').click(function() {
+        //   $('.carousel').carousel('prev');
+        // });
+        //
+        // $('i.fa-chevron-circle-right').click(function() {
+        //    $('.carousel').carousel('next');
+        // });
+        $('.materialboxed').materialbox();
+        $('.slider').slider({indicators: false});
+        $(".button-collapse").sideNav();
+        $('.carousel.carousel-slider').carousel({fullWidth: true});
+        $('.parallax').parallax();
+        $(".dropdown-button").dropdown();
+
+
+
+
+
+        //==== Start Shrink header after scrool ====
+        $(document).on("scroll", function(){
+      		if
+             ($(document).scrollTop()){
+      		   $("nav").addClass("shrink");
+             $(".container-header").addClass("wider");
+      		}
+      		else
+      		{
+      			$("nav").removeClass("shrink");
+            $(".container-header").removeClass("wider");
+      		}
+      	});
+        //==== End Shrink header after scrool ====
+    });
+    </script>
+    <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-41288812-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+   </script>
+  </body>
+</html>

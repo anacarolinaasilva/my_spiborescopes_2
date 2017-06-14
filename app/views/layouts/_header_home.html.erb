@@ -1,0 +1,22 @@
+<header>
+  <%= render 'layouts/menu' %>
+  <!-- Starts Container Slider -->
+  <div class="container-slide" >
+    <div class="floating-slider-image">
+      <%= image_tag('spi-borescopes-x1-home.jpg', :alt => 'TO BE ADDED', class: "responsive-img") %>
+    </div>
+    <div class="caption" id="spi-caption" >
+      <div class="caption-slider-top">
+        <h1 class="header-slider hide-on-xsmall-and-down">Technology you <span class="font-blue">need</span><br>at a <span class="font-blue">price</span> you can afford.</h1>
+        <a href="#download-catalog-scroll" class="btn bc-primary-color  waves-effect waves-light btn-large button-home hide-on-small-and-down">
+          <span>Download The Pricing & Product Catalog</span>
+        </a>
+        <a href="#download-catalog" class="btn bc-primary-color spi-call-to-action waves-effect  waves-light hide-on-med-and-up">
+          <span>Download Catalog</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Ends Container Slider -->
+  <%= render 'layouts/side_nav' %>
+</header>

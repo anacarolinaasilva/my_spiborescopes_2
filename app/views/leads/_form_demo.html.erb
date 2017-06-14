@@ -1,0 +1,25 @@
+<%= form_for(lead) do |f|  %>
+  <% if lead.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+      <ul>
+        <% lead.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="input-field col s12 m12 l3 offset-l2" >
+       <%= f.text_field :name,  class: "validate", id: "first_name", placeholder:"Full Name" %>
+    </div>
+    <div class="input-field col s12 m12 l3 ">
+      <%= f.text_field :email,  class: "validate", id: "email", placeholder:"Email" %>
+    </div>
+    <div class="input-field col s12 m12 l4 clear-20 left">
+      <div class="btn bc-primary-color spi-call-to-action waves-effect  waves-light">
+        <%= f.submit "Request Now"  %>
+      </div>
+    </div>
+
+<% end %>

@@ -1,0 +1,45 @@
+
+<%= render 'layouts/header' %>
+<div class="row">
+  <div class="col s12 m12 l12">
+   <div class="container ">
+
+<div id="card-alert" class="card green lighten-5">
+                      <div class="card-content green-text">
+                             <p id="notice"><%= notice %></p>
+                      </div>
+                    </div>
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @lead.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @lead.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @lead.phone %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @lead.company %>
+</p>
+
+<p>
+  <strong>Information Required:</strong>
+  Comming Soon!
+</p>
+
+
+
+</div>
+</div>
+</div>
+
+<%= render 'layouts/footer' %>

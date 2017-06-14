@@ -1,0 +1,27 @@
+<% provide(:title, @user.name) %>
+
+<div class="row">
+   <div class="col s12 m12 l12">
+    <div class="container ">
+      <p id="notice"><%= notice %></p>
+       <h4>Profile</h4>
+       <h1>
+         <%= gravatar_for @user %>
+         <%= @user.name %>
+        </h1>
+       <%= @user.name %><br/>
+       <%= @user.email %><br/>
+       <%= @user.first_name %><br/>
+       <%= @user.last_name %><br/>
+
+    </div>
+   </div>
+</div>
+
+    <% if @user.microposts.any? %>
+      <h3>Microposts (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%# will_paginate @microposts %>
+    <% end %>

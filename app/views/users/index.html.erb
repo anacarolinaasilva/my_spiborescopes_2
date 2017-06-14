@@ -1,0 +1,16 @@
+<% provide(:title, "All Users") %>
+<!-- Rails knows to paginate an instance variable called @user-->
+    <%= will_paginate %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>
+        <%= render @users %>
+      </td>
+    </tr>
+  </thead>
+</table>
+    <%= will_paginate %>

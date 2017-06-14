@@ -1,0 +1,51 @@
+<%= form_for(lead) do |f| %>
+  <% if lead.errors.any? %>
+    <div id="error_explanation">
+    <h2><%= pluralize(lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+    <ul>
+    <% lead.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :full_name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :company %>
+    <%= f.text_field :company %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Select Your Areas Of Interest ( You can select more than 1 option):" %><br />
+    <%= f.collection_check_boxes :origin_ids, Origin.all, :id, :name do |b| %>
+      <div class="collection-check-box">
+        <%= b.check_box %>
+        <%= b.label %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="input-field col s12 m3 l3">
+  <div class="btn bc-primary-color spi-call-to-action waves-effect  waves-light">
+     <%= f.submit "Submit"%>
+   </div>
+   </div>
+
+
+
+<% end %>

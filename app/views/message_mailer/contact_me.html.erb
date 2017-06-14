@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Message Received from SPI Borescopes Contact Form </h1>
+
+
+  <table align="center" border="1" cellpadding="0" cellspacing="0" width="600">
+   <tr>
+    <td bgcolor="#70bbd9">
+      Name:
+    </td>
+    <td bgcolor="#ffffff">
+       <%= @msg.name %>
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#70bbd9">
+      Email:
+    </td>
+    <td bgcolor="#ffffff">
+       <%= @msg.email %>
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#70bbd9">
+     Phone:
+    </td>
+    <td bgcolor="#ffffff">
+     <%= @msg.phone %>
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#70bbd9">
+Company:
+    </td>
+    <td bgcolor="#ffffff">
+     <%= @msg.company %>
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#70bbd9">
+Body:
+    </td>
+    <td bgcolor="#ffffff">
+     <%= @msg.body %>
+    </td>
+   </tr>
+
+  </table>
+
+
+
+  </body>
+</html>

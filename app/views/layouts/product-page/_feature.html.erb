@@ -1,0 +1,70 @@
+<section id="product-features" >
+  <div class="container">
+    <div class="row margin-bottom-zero">
+      <div class="col s12 m12 l12">
+       <div class="card-spi  ">
+<!-- Start First Line -->
+          <div class="card-item-featured order-1" >
+            <%= yield(:img1) %>
+          </div>
+          <div class="card-item-featured-content  order-2" >
+            <h3 class="header-feature-product-page"><%= yield(:productName) %></h3>
+            <h4 class="sub-header-feature-product-page"><%= yield(:subProductName) %></h4>
+            <p class="flow-text">
+              <%= yield(:description) %>
+            </p>
+            <div class="product-features-call-to-action">
+              <a class="waves-effect waves-light btn red" href="#download-technical-specifications">Get Pricing</a>
+            </div>
+            <div class="related-products" >
+              <strong>RELATED PRODUCTS:</strong>
+              <%= yield(:relatedProducts) %>
+              <br/><br/>
+              <strong>TAGS:</strong>
+              <div class="chip">
+                borescope camera
+              </div>
+              <div class="chip">
+                inspection camera
+              </div>
+              <div class="chip">
+                videoscope
+              </div>
+              <div class="chip">
+                endoscope camera
+              </div>
+            </div>
+          </div>
+ <!-- End First Line -->
+
+ <!-- Start Middle Line -->
+          <div class="card-item  order-3">
+            <h3 class="header-key-feature-product-page">Key Features</h3>
+            <%= yield(:keyFeatures) %>
+            <div class="product-features-call-to-action">
+              <a class="waves-effect waves-light btn bk-blue" href="#download-technical-specifications">Technical Specs</a>
+            </div>
+          </div>
+          <div class="card-item  order-4">
+            <%= yield(:img2) %>
+          </div>
+ <!-- End Middle Line -->
+
+<!-- Start Last Line -->
+          <div class="card-item order-5 flex30"   >
+            <%= yield(:img3) %>
+          </div>
+
+          <div class="card-item  order-6 flex70"  >
+            <h3 class="header-key-feature-product-page">Key Features</h3>
+            <%= yield(:keyFeatures2) %>
+            <div class="product-features-call-to-action">
+              <a class="waves-effect waves-light btn bk-yellow" href="/inspection-camera/demo" target="_blank">Demo Now</a>
+            </div>
+          </div>
+<!-- End Last Line -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+
+  #The subject of the email that is going to be sent by the mailer called app/mailers/message_mailer.rb
+  message_mailer:
+    #The action within the mailer app/mailers/message_mailer.rb that we use to send the email
+    contact_me:
+      #the argument that is being passed to the mailer as an object
+      subject: 'Message from www.spiborescopes.com'

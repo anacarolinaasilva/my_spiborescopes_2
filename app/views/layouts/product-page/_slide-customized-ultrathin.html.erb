@@ -1,0 +1,21 @@
+<div  class="container-product-page" >
+   <div class="parallax-container hide-on-small-and-down">
+       <div class="parallax hide-on-small-and-down">
+             <%= yield(:backgroundName) %>
+       </div>
+  </div>
+  <div class="container">
+               <div class="container-product-page">
+                    <div class="caption-parallax-product-page thin-product-page">
+                      <h1 class="header-slider-product-page hide-on-small-and-down"><%= yield(:productName) %></h1>
+                      <h2 class="sub-header-slider-product-page hide-on-small-and-down"><%= yield(:productLastName) %></h2>
+                      <a href="#download-technical-specifications" class="btn bc-primary-color hide-on-small-and-down  waves-effect waves-light btn-large button-parallax-product-page">
+                         <span>Download Technical Specifications</span>
+                      </a>
+                      <a href="#download-technical-specifications" class="btn bc-primary-color waves-effect waves-light btn-large button-products hide-on-med-and-up">
+                        <span>Download Catalog</span>
+                      </a>
+                   </div>
+                </div>
+   </div>
+</div>

@@ -1,0 +1,125 @@
+//=== Layout Colors ===
+$primary-color:   #f8b504;      //yellow
+$secondary-color: #0a5f9f;      //blue
+$ternary-color:   #1a1a1a;      //grey
+$fourth-color:    #eeeeee;     //light-grey
+$fifth-color:     #333333;
+$sixth-color:     #2d76ad;     //lighter-blue
+
+
+$button-floating-background: $secondary-color !default;
+$button-floating-background-hover: $button-floating-background !default;
+
+//===  Menu Colors ===
+$text-content:   $ternary-color;
+$topmenu-link:   #333333;
+$topmenu-hover:  $secondary-color;
+$topmenu-active: $primary-color;
+
+//===  Text Colors ===
+$text-color-gray:   $ternary-color;
+$text-color-blue:   $secondary-color;
+$text-color-yellow: $primary-color;
+$text-color-dark-yellow: #c18610;
+$text-color-white: #fff;
+$text-color-black: #000;
+
+//=== Link Colors ===
+$link-color: $primary-color;
+
+
+//===  Font Styles ===
+$text-font:        'gotham-book', Verdana, Arial, Sans-serif;
+$text-font-black:  'gotham-black', Verdana, Arial, Sans-serif;
+$text-font-bold:   'gotham-bold', Verdana, Arial, Sans-serif;
+$text-font-light:  'gotham-light', Verdana, Arial, Sans-serif;
+$text-font-medium: 'gotham-medium', Verdana, Arial, Sans-serif;
+$text-font-thin:   'gotham-thin', Verdana, Arial, Sans-serif;
+$text-font-ultra:  'gotham-ultra', Verdana, Arial, Sans-serif;
+$text-font-x-light:'gotham-x-light', Verdana, Arial, Sans-serif;
+
+
+// === Full Width Height
+$height-full-width-slider: 600px;
+
+
+//=== Header
+$text-large: 78px;
+$text-medium:40px;
+$text-small: 24px;
+$text-junior:30px;
+$text-tiny:  10px;
+
+
+ //=== Screen Customized
+ $large-and-down: "only screen and (max-width : #{$large-screen-up})" !default;
+
+
+// Media Query Ranges
+
+$xsmall-screen:    360px !default;
+$xsmall-screen-up: 361px !default;
+
+//$small-screen: 600px !default;
+//$small-screen-up: 601px !default;
+
+//$medium-screen: 992px !default;
+//$medium-screen-up: 993px !default;
+
+//$large-screen: 1200px !default;
+//$large-screen-up: 1201px !default;
+
+$xlarge-screen: 1400px !default;
+$xlarge-screen-up: 1401px !default;
+$gigant-screen: 2000px !default;
+
+
+
+
+// === AND UP ===
+$xlarge-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+// $large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+// $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$small-and-up:  "only screen and (min-width : #{$xsmall-screen-up})" !default;
+// $xsmall-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+
+// === AND DOWN ===
+$xsmall-and-down: "only screen and (max-width : #{$xsmall-screen})" !default;
+// $small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+// $medium-and-down: "only screen and (max-width : #{$small-screen})" !default;
+// $large-and-down:  "only screen and (max-width : #{$small-screen})" !default;
+
+
+$large-only: "only screen and (min-width : #{$medium-screen-up}) and (max-width : #{$large-screen})" !default;
+//$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$small-only: "only screen and (min-width : #{$xsmall-screen-up}) and (max-width : #{$small-screen})" !default;
+
+
+// === .HIDE CLASSES ===
+//.hide	Hidden for all Devices
+
+//.hide-on-small-only	Hidden for Mobile Only
+//.hide-on-small-and-up
+//.hide-on-small-and-down
+
+//.hide-on-med-only	Hidden for Tablet Only
+//.hide-on-med-and-down	Hidden for Tablet and Below
+//.hide-on-med-and-up	Hidden for Tablet and Above
+
+//.hide-on-large-only
+
+.hide-on-small-and-up{
+  @media #{$small-and-up}{
+      display:none;
+  }
+}
+.hide-on-small-and-down{
+ @media #{$small-and-down}{
+   display: none;
+ }
+}
+.hide-on-xsmall-and-down{
+ @media #{$xsmall-and-down}{
+   display: none;
+ }
+}

@@ -1,0 +1,27 @@
+<%= form_for(Message.new) do |f| %>
+<%#form_for @message, url: create_message_url do |f| %>
+  <%= notice %>
+  <%# @message.errors.full_messages.join(', ') %>
+
+<div class="input-field col s12">
+  <%= f.text_field :name, placeholder: 'name' %>
+</div>
+<div class="input-field col s12">
+  <%= f.email_field :email, placeholder: 'email' %>
+  </div>
+  <div class="input-field col s12">
+  <%= f.text_field :phone, placeholder: 'phone' %>
+  </div>
+  <div class="input-field col s12">
+  <%= f.text_field :company, placeholder: 'company' %>
+  </div>
+  <div class="input-field col s12">
+  <%= f.text_area :body, placeholder: 'body' %>
+  </div>
+
+  <div class="input-field col s12">
+  <div class="btn bc-primary-color spi-call-to-action waves-effect  waves-light">
+     <%= f.submit 'Send' %>
+  </div>
+ </div>
+<% end %>

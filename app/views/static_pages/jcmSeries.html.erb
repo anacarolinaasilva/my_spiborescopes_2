@@ -1,0 +1,68 @@
+<!-- Dynamic Features -->
+<% provide(:title, "JCM Series | Mechanical Articulating Borescope") %>
+<% provide(:metaDescription, "SPI Borescopes is proud to introduce the JCM 3000 Pipe Inspection System. The JCM is a major breakthrough in High-End Digital Borescope Pipe Cameras, Extreme Durability, and Remotely Controlled Camera Articulation. ") %>
+
+
+<% provide(:subProductName, "Pipe Inspection System") %>
+
+<% content_for(:relatedProducts) do %>
+<%= render 'layouts/product-page/tags/jcm-series'  %>
+<% end %>
+
+<% content_for(:featuredProductName) do %>
+   <%= image_tag('jmc-3000-series-pipe-inspection-system-featured-img.png', :alt => 'TO BE ADDED', :class => 'responsive-img featured-image-product-page' ) %>
+<% end %>
+
+<% content_for(:description) do %>
+  <% render :partial => 'layouts/product-page/description/jcm-series'%>
+<% end %>
+
+<% content_for(:keyFeatures) do %>
+  <% render :partial => 'layouts/product-page/key-features/jcm-series'%>
+<% end %>
+
+<% content_for(:keyFeatures2) do %>
+  <% render :partial => 'layouts/product-page/key-features/jcm-series-2'%>
+<% end %>
+
+<% provide(:productName, "JCM Series") %>
+<% provide(:productLastName, "Pipe Inspection System") %>
+
+
+
+<% content_for(:backgroundName) do %>
+  <%= image_tag('jmc-3000-series-pipe-inspection-system-background-img.jpg', :alt => 'TO BE ADDED' ) %>
+   <% end %>
+
+<% content_for(:img1) do %>
+  <%= image_tag('jmc-3000-series-pipe-inspection-system-1.jpg', :alt => 'TO BE ADDED', :class => 'responsive-img') %>
+   <% end %>
+
+<% content_for(:img2) do %>
+  <%= image_tag('jmc-3000-series-pipe-inspection-system-2.jpg', :alt => 'TO BE ADDED', :class => 'responsive-img') %>
+   <% end %>
+<% content_for(:img3) do %>
+ <%= image_tag('jmc-3000-series-pipe-inspection-system-3.jpg', :alt => 'TO BE ADDED', :class => 'responsive-img') %>
+<% end %>
+
+<% content_for(:img4) do %>
+ <%= image_tag('jmc-3000-series-pipe-inspection-system-4.jpg', :alt => 'TO BE ADDED', :class => 'responsive-img', :style => "max-height: 100px;") %>
+<% end %>
+
+
+<% content_for(:downloadImg) do %>
+   <%= image_tag('jmc-3000-series-pipe-inspection-system-tec-spec.png', :alt => 'TO BE ADDED', :class => 'responsive-img') %>
+      <%# link_to "Download Now", new_lead_path(origin_id: 5), class:"btn bc-primary-color  waves-effect waves-light btn-large button-download-catalog" %>
+      <%= render 'leads/form_demo',  lead: @lead  %>
+<% end %>
+
+
+
+
+<!--Product Partials-->
+<%= render 'layouts/header'    %>
+<%= render 'layouts/product-page/slide'  %>
+<%= render 'layouts/product-page/feature-customized-jcm'  %>
+<%= render 'layouts/product-page/download'  %>
+<%= render 'layouts/free_demo' %>
+<%= render 'layouts/footer'    %>

@@ -1,0 +1,56 @@
+@mixin linx ($link, $hover, $active) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover !important;
+    }
+    &:active {
+      color: $active !important;;
+    }
+  }
+}
+
+@mixin arrow-circle($color: $secondary-color, $radius: $ternary-color){
+  background-color: $secondary-color;
+  radius: $radius;
+
+}
+
+@mixin apply-to-ie-6{
+  * html {
+    @content;
+  }
+}
+
+
+@mixin phone-number($font-size:60px, $font-family: $text-font-black){
+  font-size:   $font-size;
+  font-family: $font-family;
+}
+
+@mixin logo($size){
+  width: $size;
+}
+
+//Precise control over responsive typography
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    #{$property}: $min-value;
+  }
+
+  @media screen and (min-width: $min-vw) {
+    @each $property in $properties {
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+    }
+  }
+
+  @media screen and (min-width: $max-vw) {
+    @each $property in $properties {
+      #{$property}: $max-value;
+    }
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
