@@ -1177,3 +1177,95 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 167ms (Views: 163.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-06-14 02:13:47 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (16.9ms)
+  Rendered layouts/_side_nav.html.erb (0.8ms)
+  Rendered layouts/_header_home.html.erb (27.4ms)
+  Rendered layouts/_spi-products.erb (8.3ms)
+  Rendered leads/_form_demo.html.erb (7.1ms)
+  Rendered layouts/_free_demo.html.erb (18.9ms)
+  Rendered layouts/_partners.html.erb (36.7ms)
+  Rendered leads/_form_demo.html.erb (1.1ms)
+  Rendered layouts/_download-product-catalog.html.erb (7.4ms)
+  Rendered layouts/_main.html.erb (79.4ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (125.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+Completed 200 OK in 362ms (Views: 346.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-20 13:37:27 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (29.0ms)
+  Rendered layouts/_side_nav.html.erb (0.8ms)
+  Rendered layouts/_header_home.html.erb (40.8ms)
+  Rendered layouts/_spi-products.erb (10.0ms)
+  Rendered leads/_form_demo.html.erb (7.0ms)
+  Rendered layouts/_free_demo.html.erb (21.6ms)
+  Rendered layouts/_partners.html.erb (49.3ms)
+  Rendered leads/_form_demo.html.erb (2.7ms)
+  Rendered layouts/_download-product-catalog.html.erb (8.6ms)
+  Rendered layouts/_main.html.erb (101.3ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (162.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+Completed 200 OK in 471ms (Views: 455.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inspection-camera/articulating/video-borescope/x1-series" for ::1 at 2017-06-20 13:38:39 -0300
+Processing by StaticPagesController#x1Series as HTML
+  Rendering static_pages/x1Series.html.erb within layouts/application
+  Rendered layouts/product-page/tags/_x1-series.html.erb (0.6ms)
+  Rendered layouts/product-page/description/_x1-series.html.erb (0.6ms)
+  Rendered layouts/product-page/key-features/_x1-series.html.erb (0.8ms)
+  Rendered layouts/product-page/key-features/_x1-series-2.html.erb (0.4ms)
+  Rendered leads/_form_demo.html.erb (1.2ms)
+  Rendered layouts/_menu.html.erb (3.5ms)
+  Rendered layouts/_side_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+  Rendered layouts/product-page/_slide.html.erb (0.8ms)
+  Rendered layouts/product-page/_download.html.erb (0.5ms)
+  Rendered leads/_form_demo.html.erb (0.6ms)
+  Rendered layouts/_free_demo.html.erb (6.2ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+  Rendered static_pages/x1Series.html.erb within layouts/application (64.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+Completed 200 OK in 175ms (Views: 169.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inspection-camera/demo" for ::1 at 2017-06-20 13:38:40 -0300
+Processing by StaticPagesController#demo as HTML
+  Rendering static_pages/demo.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (3.6ms)
+  Rendered layouts/_side_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (8.6ms)
+  Rendered leads/_form_demo.html.erb (2.0ms)
+  Rendered layouts/_demo.html.erb (9.8ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+  Rendered static_pages/demo.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-20 13:45:52 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (8.2ms)
+  Rendered layouts/_side_nav.html.erb (0.5ms)
+  Rendered layouts/_header_home.html.erb (23.0ms)
+  Rendered layouts/_spi-products.erb (4.8ms)
+  Rendered leads/_form_demo.html.erb (1.3ms)
+  Rendered layouts/_free_demo.html.erb (7.0ms)
+  Rendered layouts/_partners.html.erb (20.8ms)
+  Rendered leads/_form_demo.html.erb (0.6ms)
+  Rendered layouts/_download-product-catalog.html.erb (3.9ms)
+  Rendered layouts/_main.html.erb (43.3ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (73.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+Completed 200 OK in 188ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
