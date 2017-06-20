@@ -1269,3 +1269,22 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 188ms (Views: 185.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-06-20 15:52:47 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (16.7ms)
+  Rendered layouts/_side_nav.html.erb (1.3ms)
+  Rendered layouts/_header_home.html.erb (27.8ms)
+  Rendered layouts/_spi-products.erb (7.8ms)
+  Rendered leads/_form_demo.html.erb (7.5ms)
+  Rendered layouts/_free_demo.html.erb (17.0ms)
+  Rendered layouts/_partners.html.erb (40.6ms)
+  Rendered leads/_form_demo.html.erb (1.2ms)
+  Rendered layouts/_download-product-catalog.html.erb (6.0ms)
+  Rendered layouts/_main.html.erb (82.1ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (126.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+Completed 200 OK in 392ms (Views: 378.7ms | ActiveRecord: 0.0ms)
+
+
