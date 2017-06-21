@@ -106,6 +106,6 @@ Rails.application.configure do
   #***Added!
   config.action_mailer.default :charset => "utf-8"
 
-
+    ENV["DATABASE_URL"] = "postgres://yhoedvqihjpzms:872cb88057fa6cdc6d387f5e435c7eafcdb4192a2e2143da89382d937925de67@ec2-23-21-96-70.compute-1.amazonaws.com:5432/d81fegnvsainca"
 
 end
