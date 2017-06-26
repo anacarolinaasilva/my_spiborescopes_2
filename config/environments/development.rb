@@ -63,8 +63,7 @@ Rails.application.configure do
      :port                 => 587,
      :user_name            => ENV['GMAIL_USERNAME'],
      :password             => ENV['GMAIL_PASSWORD'],
-     #:authentication       => :login,
-     :authentication       => :plain,
+     :authentication       => :login,
      :enable_starttls_auto => true
     }
 
@@ -80,8 +79,4 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   #***Added!
   config.action_mailer.default :charset => "utf-8"
-
-  ENV["DATABASE_URL"] = "postgres://yhoedvqihjpzms:872cb88057fa6cdc6d387f5e435c7eafcdb4192a2e2143da89382d937925de67@ec2-23-21-96-70.compute-1.amazonaws.com:5432/d81fegnvsainca"
-
-
 end
