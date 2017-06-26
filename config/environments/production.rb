@@ -91,7 +91,8 @@ Rails.application.configure do
      :user_name            => ENV['GMAIL_USERNAME'],
      :password             => ENV['GMAIL_PASSWORD'],
      :domain               => "spiborescopes.co",
-     :authentication       => :plain,
+     #:authentication       => :plain,
+     :authentication       => :login,
      :enable_starttls_auto => true
     }
 
