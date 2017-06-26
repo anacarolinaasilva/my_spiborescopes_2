@@ -90,7 +90,7 @@ Rails.application.configure do
      :port                 => 587,
      :user_name            => ENV['GMAIL_USERNAME'],
      :password             => ENV['GMAIL_PASSWORD'],
-     :domain               => "spiborescopes.co",
+     #:domain               => "spiborescopes.co",
      :authentication       => :plain,
      :enable_starttls_auto => true
     }
