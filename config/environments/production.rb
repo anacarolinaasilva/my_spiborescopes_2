@@ -90,9 +90,8 @@ Rails.application.configure do
      :port                 => 587,
      :user_name            => ENV['GMAIL_USERNAME'],
      :password             => ENV['GMAIL_PASSWORD'],
-     #:domain               => "spiborescopes.co",
-     #:authentication       => :plain,
-     :authentication       => :login,
+     :domain               => "spiborescopes.co",
+     :authentication       => :plain,
      :enable_starttls_auto => true
     }
 
@@ -101,12 +100,11 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   #***Added!
-  config.action_mailer.default_url_options = { :host => 'staging-spiborescopes.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'spiborescopes.herokuapp.com' }
   #***Added!
   config.action_mailer.perform_deliveries = true
   #***Added!
   config.action_mailer.default :charset => "utf-8"
 
-    ENV["DATABASE_URL"] = "postgres://yhoedvqihjpzms:872cb88057fa6cdc6d387f5e435c7eafcdb4192a2e2143da89382d937925de67@ec2-23-21-96-70.compute-1.amazonaws.com:5432/d81fegnvsainca"
 
 end
