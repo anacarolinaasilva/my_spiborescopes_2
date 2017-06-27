@@ -1410,3 +1410,106 @@ app/controllers/leads_controller.rb:38:in `create'
   Rendering /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.2ms)
+Started GET "/" for ::1 at 2017-06-26 21:02:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (8.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered layouts/_menu.html.erb (604.0ms)
+  Rendered layouts/_side_nav.html.erb (0.4ms)
+  Rendered layouts/_header_home.html.erb (609.3ms)
+  Rendered layouts/_spi-products.erb (2.8ms)
+  Rendered leads/_form_demo.html.erb (5.0ms)
+  Rendered layouts/_free_demo.html.erb (9.9ms)
+  Rendered layouts/_partners.html.erb (8.9ms)
+  Rendered leads/_form_demo.html.erb (0.7ms)
+  Rendered layouts/_download-product-catalog.html.erb (4.3ms)
+  Rendered layouts/_main.html.erb (33.5ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (652.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+Completed 200 OK in 882ms (Views: 825.2ms | ActiveRecord: 19.6ms)
+
+
+Started POST "/leads" for ::1 at 2017-06-26 21:02:47 -0300
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+8pmBF5jpyiYIWJf2uNXkd4euYuHUzgF88edA1XR/YAna/juSmyotkoLV1abpmbwPSYf6ybKUBvkr4GCtK0rwA==", "lead"=>{"name"=>"Ana Carolina test", "email"=>"ana.albertinodasilva@gmail.com"}, "commit"=>"Request Now"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.2ms)[0m  [1m[32mINSERT INTO "leads" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ana Carolina test"], ["email", "ana.albertinodasilva@gmail.com"], ["created_at", 2017-06-27 00:02:47 UTC], ["updated_at", 2017-06-27 00:02:47 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering lead_notifier_mailer/sample_email.html.erb within layouts/mailer
+  Rendered lead_notifier_mailer/sample_email.html.erb within layouts/mailer (0.5ms)
+  Rendering lead_notifier_mailer/sample_email.text.erb within layouts/mailer
+  Rendered lead_notifier_mailer/sample_email.text.erb within layouts/mailer (0.6ms)
+LeadNotifierMailer#sample_email: processed outbound mail in 289.3ms
+Sent mail to ana.albertinodasilva@gmail.com (1653.2ms)
+Date: Mon, 26 Jun 2017 21:02:47 -0300
+From: info@spiborescopes.co
+To: ana.albertinodasilva@gmail.com
+Message-ID: <5951a0a7d8664_97b3fd7d61ccae4616eb@Anas-MacBook-Pro.local.mail>
+Subject: Email from the SPI Borescopes Team
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5951a0a7d6886_97b3fd7d61ccae461512";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5951a0a7d6886_97b3fd7d61ccae461512
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank You!  Ana Carolina test
+We will get you the info requested momentarily.
+- SPI Borescopes Team
+
+
+----==_mimepart_5951a0a7d6886_97b3fd7d61ccae461512
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h4>Thank You! Ana Carolina test</h4>
+      <p>We will get you the info requested momentarily. </p>
+    <blockquote> - SPI Borescopes Team</blockquote>
+  </body>
+</html>
+
+  </body>
+</html>
+
+----==_mimepart_5951a0a7d6886_97b3fd7d61ccae461512--
+
+Completed 500 Internal Server Error in 2024ms (ActiveRecord: 13.5ms)
+
+
+  
+Net::SMTPAuthenticationError (530-5.5.1 Authentication Required. Learn more at
+):
+  
+app/controllers/leads_controller.rb:40:in `block in create'
+app/controllers/leads_controller.rb:38:in `create'
+  Rendering /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/anasilva/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
